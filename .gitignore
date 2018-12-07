@@ -1,0 +1,6 @@
+.sass-cache/
+.directory
+.DS_Store
+assets/css/
+node_modules/
+yarn.lock
