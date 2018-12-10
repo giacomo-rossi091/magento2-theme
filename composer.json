@@ -1,6 +1,6 @@
 {
-    "name": "Retorica/FgvTheme",
-    "description": "Theme for the fgv.it website",
+    "name": "Giacomo/Magento2Theme",
+    "description": "Magento2 Theme",
     "require": {
         "php": "~7.0.0",
         "magento/framework": "101.*"
