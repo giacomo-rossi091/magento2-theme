@@ -1,0 +1,12 @@
+.gallery{
+    @include content-spacing();
+    @include break-container();
+    figure{
+        margin:0 !important;
+    }
+    img{
+        width: 100%;
+        display: block;
+        margin: auto !important;
+    }
+}

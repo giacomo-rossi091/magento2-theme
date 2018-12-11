@@ -1,0 +1,12 @@
+<?php
+
+$cssClass = $block->getCssClass() ? ' ' . $block->getCssClass() : '';
+$title = $block->escapeHtml($block->getPageHeading());
+
+if ($title): ?>
+    <div id="title">
+        <h1 class="<?= /* @escapeNotVerified */ $cssClass ?>">
+            <?= /* @escapeNotVerified */ $title ?>
+        </h1>
+    </div>
+<?php endif; ?>

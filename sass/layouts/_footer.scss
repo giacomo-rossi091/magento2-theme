@@ -1,0 +1,99 @@
+#footer-banner{
+    padding:40px 0;
+    background: $footer-banner-background;
+    color: $footer-banner-color;
+    a{
+        @include color-transition($footer-banner-color,$footer-banner-color-hover);
+    }
+}
+
+#footer-social{
+    padding:10px 0;
+    background: $footer-social-background;
+    color: $footer-social-color;
+    a{
+        @include color-transition($footer-social-color,$footer-social-color-hover);
+    }
+    .social-links-widget{
+        text-align: center;
+        .social-link{
+            background: $footer-social-color;
+            color: transparent;
+            border: 2px solid transparent;
+            @include transition(border 0.2s linear);
+            a{
+                color: $footer-social-background !important;
+            }
+            &:hover{
+                @include transition(border-color 0.2s linear);
+                border-color: $footer-social-color-hover;
+            }
+        }
+    }
+}
+
+#footer-menu{
+    padding: 25px 0;
+    background: $footer-menu-background;
+    color: $footer-menu-color;
+    a{
+        @include color-transition($footer-menu-color,$footer-menu-color-hover);
+    }
+    h4{
+        color: $footer-menu-title-color;
+    }
+}
+
+#footer-informations{
+    padding:20px 0;
+    background: $footer-informations-background;
+    color: $footer-informations-color;
+    p:not(:last-child){
+        margin-bottom:5px;
+    }
+    a{
+        @include color-transition($footer-informations-color,$footer-informations-color-hover);
+    }
+}
+
+#footer-signature{
+    text-align: center;
+    padding:20px 0;
+    background: $footer-signature-background;
+    color: $footer-signature-color;
+    p:not(:last-child){
+        margin-bottom:5px;
+    }
+    a{
+        @include color-transition($footer-signature-color,$footer-signature-color-hover);
+    }
+}
+
+#footer-back-to-top{
+    width: 50px;
+    height: 50px;
+    background: $footer-back-to-top-background;
+    color: $footer-back-to-top-color;
+    position: fixed;
+    right: 15px;
+    bottom:15px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(visibility 0.2s linear, opacity 0.2s linear);
+    &.visible{
+        visibility: visible;
+        opacity: 1;
+        @include transition(visibility 0.2s linear, opacity 0.2s linear);
+    }
+}
+
+
+
+@include media-breakpoint-up(md) {
+
+
+}

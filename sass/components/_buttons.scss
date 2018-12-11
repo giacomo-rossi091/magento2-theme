@@ -1,0 +1,62 @@
+.button1{
+    text-align: center;
+    display: inline-block;
+    border: $buttons-button1-border !important;
+    color:  $buttons-button1-color !important;
+    background: $buttons-button1-background !important;
+    padding:10px 20px;
+    @include transition(all 0.2s linear !important);
+    &:hover{
+        @include transition(all 0.2s linear !important);
+        color: $buttons-button1-color-hover  !important;
+        background: $buttons-button1-background-hover !important;
+    }
+}
+
+.button2{
+    text-align: center;
+    display: inline-block;
+    border: $buttons-button2-border !important;
+    color:  $buttons-button2-color !important;
+    background: $buttons-button2-background !important;
+    padding:10px 20px;
+    @include transition(all 0.2s linear !important);
+    &:hover{
+        @include transition(all 0.2s linear !important);
+        color: $buttons-button2-color-hover  !important;
+        background: $buttons-button2-background-hover !important;
+    }
+}
+
+.button3{
+    text-align: center;
+    display: inline-block;
+    border: $buttons-button3-border !important;
+    color:  $buttons-button3-color !important;
+    background: $buttons-button3-background !important;
+    padding:10px 20px;
+    @include transition(all 0.2s linear !important);
+    &:hover{
+        @include transition(all 0.2s linear !important);
+        color: $buttons-button3-color-hover  !important;
+        background: $buttons-button3-background-hover !important;
+    }
+}
+
+.button4{
+    border: $buttons-button4-border !important;
+    color:  $buttons-button4-color !important;
+    margin:5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    @include transition(all 0.2s linear !important);
+    &:hover,&:active,&:focus{
+        @include transition(all 0.2s linear !important);
+        color: $buttons-button4-color-hover  !important;
+        border: $buttons-button4-border-hover !important;
+    }
+}

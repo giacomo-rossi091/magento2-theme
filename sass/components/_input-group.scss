@@ -1,0 +1,129 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+textarea{
+	margin-top: 5px;
+    margin-bottom: 15px;
+	background: $input-group-input-background ;
+	color: $input-group-input-color ;
+	border:$input-group-input-border  ;
+    padding:5px;
+	width: 100%;
+	max-width: 100%;
+	@include placeholder($input-group-input-placeholder-color );
+	border-radius: $input-group-input-border-radius  ;
+	@include transition(all 0.2s linear);
+	box-sizing:border-box;
+	&:focus{
+		border:$input-group-input-border-focus !important ;
+		@include transition(all 0.2s linear);
+	}
+}
+
+select{
+	margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="file"]{
+	height: $input-group-input-height;
+}
+
+textarea
+{
+	height: $input-group-textarea-height  !important;
+}
+
+input[type="submit"]{
+	margin-top: 15px;
+    margin-bottom: 15px;
+	@extend .button1;
+	display: block;
+}
+
+button[type="submit"]{
+	margin-top: 15px;
+    margin-bottom: 15px;
+	@extend .button1;
+	display: block;
+}
+
+input[type="checkbox"]{
+	height: 20px;
+	width: 20px;
+	margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.g-recaptcha{
+	margin:15px 0;
+}
+
+legend{
+	color: $input-group-legend-color;
+}
+
+.control{
+	position: relative;
+}
+
+input.mage-error,
+textarea.mage-error{
+	border-color: $input-group-error-color;
+}
+
+div.mage-error{
+	color: $input-group-error-color;
+	margin-top: -15px;
+}
+
+#acceptance-error{
+	margin-top: 0 !important;
+}
+
+#search-form{
+	position: relative;
+
+	#search-input{
+		margin-bottom: 0;
+	}
+
+	#search-submit{
+		position: absolute;
+		right: 10px;
+		top:50%;
+		@include transform(translateY(-50%));
+		i{
+	        font-size: 25px;
+	    }
+	}
+}
+
+#search-autocomplete{
+    background: white;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px;
+	ul{
+		padding: 5px;
+	}
+}
+
+#password-strength-meter-container{
+	position: absolute;
+	top:-15px;
+	right: 0;
+}
+
+.field.acceptance .widget{
+	display: inline-block;
+}

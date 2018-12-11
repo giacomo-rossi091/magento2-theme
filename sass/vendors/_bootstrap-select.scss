@@ -1,0 +1,38 @@
+@import "../../node_modules/bootstrap-select/sass/bootstrap-select";
+
+.bootstrap-select{
+    margin-top:5px;
+    margin-bottom:15px;
+
+    &.show .dropdown-toggle{
+        border: $input-group-input-border-focus !important;
+    }
+
+    .dropdown-menu{
+        margin: 0 !important;
+        padding:0 !important;
+    }
+
+    .dropdown-toggle{
+        border-radius: 0 !important;
+        background: none !important;
+
+        box-shadow: none !important;
+        color: $input-group-input-color !important;
+        border: $input-group-input-border;
+        height: $input-group-input-height;
+        &:focus,
+        &:active{
+            outline: $input-group-input-border !important;
+        }
+    }
+
+    a{
+        color: $input-group-input-color !important;
+    }
+
+    .dropdown-item.active{
+        background: $blue !important;
+        color: $white !important;
+    }
+}

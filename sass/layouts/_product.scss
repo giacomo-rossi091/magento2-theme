@@ -1,0 +1,191 @@
+.catalog-product-view{
+
+    /* RELATED */
+    #related{
+        margin-top:30px;
+        padding-top:30px;
+        border-top: $product-separator;
+        .tocart{
+            margin-top: 15px;
+        }
+        .price-box{
+            margin-top: 0;
+        }
+    }
+
+    .product-item-info{
+        padding-bottom: 15px;
+        border-bottom: $product-separator;
+    }
+
+    .product-item-name{
+        margin-top: 15px;
+        color: $product-related-item-name-color;
+    }
+
+    .product-item-photo{
+        font-size: 0;
+    }
+
+
+    /* PRODUCT */
+    #product{
+
+        .price-box{
+            margin-top:15px;
+        }
+
+        .box-tocart{
+            margin-top: 15px;
+            .label{
+                display: inline;
+            }
+            .control{
+                display: inline-block;
+                margin-left: 10px;
+            }
+            input[type="number"]{
+                width: 100px;
+                margin:0;
+            }
+        }
+
+        .social-sharing-widget{
+            border-top: $product-separator;
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+
+        .sku{
+            .type{
+                display: inline-block;
+                margin-right: 5px;
+            }
+            .value{
+                display: inline-block;
+            }
+        }
+
+        .description{
+            border-top: $product-separator;
+            padding-top: 30px;
+            margin-top: 30px;
+            .type{
+                display: block;
+                color: $content-heading-color;
+            }
+        }
+
+        .short-description{
+            margin-top: 15px;
+        }
+
+        .stock{
+            border-top: $product-separator;
+            padding-top: 30px;
+            margin-top: 30px;
+            .available{
+                color: $product-info-stock-available-color;
+            }
+            .unavailable{
+                color: $product-info-stock-unavailable-color;
+            }
+        }
+
+        .media{
+            .fotorama__stage__frame .fotorama__img{
+                height: 100% !important;
+            }
+            .gallery-placeholder{
+                width: 100%;
+            }
+            img{
+                margin:0 !important;
+            }
+        }
+
+
+
+        #back{
+            margin-top: 30px;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+.product-items{
+    padding-left: 0 !important;
+
+    .unavailable{
+        color: $product-info-stock-unavailable-color;
+    }
+
+    .product-item-info{
+        padding-bottom: 15px;
+        border-bottom: $product-separator;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .price-box {
+        margin-bottom: 80px;
+    }
+
+    .product-item{
+        list-style: none !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .product-item-photo{
+            display: block;
+            font-size: 0;
+            img{
+                margin-top: 0 !important;
+            }
+
+        }
+
+        .photo{
+            margin:0 !important;
+        }
+
+        .product-item-link{
+            color: $product-item-name-color !important;
+        }
+
+        .product-item-name{
+            color: $product-item-name-color !important;
+            margin-top: 15px !important;
+            display: block;
+        }
+
+        .price-box{
+
+        }
+
+        .product-item-inner{
+            position: absolute;
+            bottom:10px;
+            margin:0;
+        }
+
+        .product-item-actions{
+            .action{
+                margin: 0 5px 5px 0 !important ;
+            }
+
+        }
+    }
+
+
+
+}

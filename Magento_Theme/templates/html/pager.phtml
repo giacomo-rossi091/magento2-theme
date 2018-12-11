@@ -1,0 +1,88 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Pager template
+ *
+ * @see \Magento\Theme\Block\Html\Pager
+ */
+?>
+<?php if ($block->getCollection()->getSize()): ?>
+
+        <?php if ($block->getLastPageNum()>1): ?>
+        <nav class="pager">
+            <ul class="items pager-items">
+            <?php if (!$block->isFirstPage()): ?>
+                <li class="item previous">
+                    <a href="<?= /* @escapeNotVerified */ $block->getPreviousPageUrl() ?>">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+            <?php endif;?>
+
+            <?php if ($block->canShowFirst()): ?>
+                <li class="item first">
+                    <a href="<?= /* @escapeNotVerified */ $block->getFirstPageUrl() ?>">
+                        1
+                    </a>
+                </li>
+            <?php endif;?>
+
+            <?php if ($block->canShowPreviousJump()): ?>
+                <li class="item">
+                    <a href="<?= /* @escapeNotVerified */ $block->getPreviousJumpUrl() ?>">
+                        ...
+                    </a>
+                </li>
+            <?php endif;?>
+
+            <?php foreach ($block->getFramePages() as $_page): ?>
+                <?php if ($block->isPageCurrent($_page)): ?>
+                    <li class="item active">
+                        <?= /* @escapeNotVerified */ $_page ?>
+                    </li>
+                <?php else: ?>
+                    <li class="item">
+                        <a href="<?= /* @escapeNotVerified */ $block->getPageUrl($_page) ?>">
+                            <span><?= /* @escapeNotVerified */ $_page ?></span>
+                        </a>
+                    </li>
+                <?php endif;?>
+            <?php endforeach;?>
+
+            <?php if ($block->canShowNextJump()): ?>
+                <li class="item">
+                    <a href="<?= /* @escapeNotVerified */ $block->getNextJumpUrl() ?>">
+                        ...
+                    </a>
+                </li>
+            <?php endif;?>
+
+            <?php if ($block->canShowLast()): ?>
+              <li class="item last">
+                  <a href="<?= /* @escapeNotVerified */ $block->getLastPageUrl() ?>">
+                      <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                  </a>
+              </li>
+            <?php endif;?>
+
+            <?php if (!$block->isLastPage()): ?>
+                <li class="item next">
+                    <a  href="<?= /* @escapeNotVerified */ $block->getNextPageUrl() ?>">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            <?php endif;?>
+            </ul>
+        </nav>
+        <?php endif; ?>
+
+
+<?php endif ?>

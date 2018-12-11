@@ -1,0 +1,60 @@
+.sales-order-history{
+    .table-caption{
+        display: none;
+    }
+}
+
+
+.sales-order-view{
+    h2{
+        margin-bottom: 15px;
+        padding-bottom:15px;
+        border-bottom: 1px solid;
+    }
+
+    .block-order-details-view{
+        .box-title h3{
+            margin-top: 0 !important;
+            margin-bottom:10px;
+        }
+        .box{
+            padding:15px;
+            border:2px solid $grey;
+            border-radius: 10px;
+
+        }
+    }
+
+    .items-qty{
+        padding-left: 0 !important;
+        margin: 0 !important;
+        .item{
+            list-style: none !important;
+        }
+    }
+
+    .order-items{
+        .table-caption{
+            display: none !important;
+        }
+    }
+
+    .order-links{
+        padding-left: 0 !important;
+        margin:20px 0;
+        .item{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            padding: 5px;
+            border-radius: 0 !important;
+            margin-right: 5px;
+            margin-bottom:5px;
+            background: $grey;
+            &.current{
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+}

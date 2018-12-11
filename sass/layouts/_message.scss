@@ -1,0 +1,111 @@
+#messages{
+    position: fixed;
+    top:15px;
+    left: 15px;
+    right: 15px;
+    z-index: 99;
+
+    .message{
+        @extend .alert;
+        margin:0 !important;
+        &.info{
+            @extend .alert-info;
+        }
+
+        &.success{
+            @extend .alert-success;
+        }
+
+        &.error{
+            @extend .alert-danger;
+        }
+    }
+
+    .close-message{
+        position: absolute;
+        top:50%;
+        padding:10px;
+        right: 0;
+        cursor: pointer;
+        @include transform(translateY(-50%));
+    }
+
+
+}
+
+.message.info{
+    margin:15px 0 !important;
+    @extend .alert;
+    @extend .alert-info;
+    p:first-child{
+        margin-top:0 !important;
+    }
+}
+
+.message.success{
+    margin:15px 0 !important;
+    @extend .alert;
+    @extend .alert-success;
+    p:first-child{
+        margin-top:0 !important;
+    }
+}
+
+.message.error{
+    margin:15px 0 !important;
+    @extend .alert;
+    @extend .alert-danger;
+    p:first-child{
+        margin-top:0 !important;
+    }
+}
+
+
+.modal-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: $message-modals-wrapper-background;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(opacity 0.2s linear);
+    &._show{
+        visibility: visible;
+        opacity: 1;
+        @include transition(opacity 0.2s linear);
+            z-index: 9999 !important;
+    }
+
+    .modal-inner-wrap{
+        padding:15px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);;
+        //border: $message-modal-border;
+        background: $message-modal-background;
+        position: fixed;
+        top: 15%;
+        right: 15%;
+        //bottom: 20%;
+        max-height: 70%;
+        left: 15%;
+        overflow-y: scroll;
+        .modal-header{
+            .action-close{
+                display: none;
+            }
+        }
+
+        .modal-content{
+            margin-top: 15px;
+        }
+
+        .modal-footer{
+            margin-top:15px;
+        }
+    }
+
+
+
+
+}

@@ -1,0 +1,236 @@
+#header-bar{
+    padding:15px 0;
+    background: $header-bar-background;
+
+}
+
+#header-navigation{
+    overflow-y: scroll;
+    z-index: 999;
+    background: $header-navigation-background;
+    position: fixed;
+    width: 0;
+    top:0;
+    left: 0;
+    bottom:0;
+    @include transition(width .2s linear);
+    .wrapper{
+        padding-left: 15px;
+    }
+    &.open{
+        width: 70%;
+        @include transition(width .2s linear);
+    }
+}
+
+#header-toggle{
+    display: inline-block;
+    cursor: pointer;
+    padding:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    @extend %fa-icon;
+    @extend .fas;
+    line-height: 30px;
+    &.open{
+        @include transition(all .2s linear);
+        border: $header-toggle-open-border;
+        color: $header-toggle-open-color;
+        background: $header-toggle-open-background;
+        &:before {
+          content: fa-content($fa-var-bars);
+        }
+
+    }
+    &.closed{
+        @include transition(all .2s linear);
+        border: $header-toggle-close-border;
+        color: $header-toggle-close-color;
+        background: $header-toggle-close-background;
+        &:before {
+          content: fa-content($fa-var-times);
+        }
+    }
+}
+
+#search-input{
+    border-radius: 35px;
+    border: $header-search-input-border;
+    color: $header-search-input-color;
+    background: $header-search-input-background;
+    @include placeholder($header-search-input-color);
+}
+
+#search-submit{
+    padding: 0;
+    background: none !important;
+    color: $header-search-submit-color !important;
+    border: none !important;
+    margin:0 !important;
+}
+
+#header-logo{
+    img{
+        display: block;
+    }
+}
+
+#header-user-actions{
+    color: $header-user-actions-color;
+    i{
+        font-size: 25px;
+    }
+    #account,
+    #minicart{
+        display: inline-block;
+        padding:5px;
+    }
+
+    .counter-label{
+        display: none;
+    }
+    #minicart{
+        position: relative;
+        &.active{
+            .block-minicart{
+                opacity: 1;
+                @include transition(opacity 0.2s linear);
+            }
+        }
+    }
+}
+
+
+
+
+
+#header-slider{
+    position: relative;
+}
+
+
+#header-scroll{
+    cursor: pointer;
+    position: absolute;
+    max-width: 50px;
+    bottom:5px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    z-index: 15;
+}
+
+
+
+
+
+#header-contacts{
+    border-right: $header-contacts-separator;
+    margin-right: 20px;
+    padding-right: 20px;
+    a{
+        display: inline-block;
+        padding:10px;
+        @include color-transition($header-contacts-color,$header-contacts-color-hover);
+    }
+}
+
+
+
+#header-menu-contacts{
+    margin:30px 15px;
+    padding-bottom: 30px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        left: 30%;
+        height: 1px;
+        background: $header-menu-contacts-separator;
+    }
+    a{
+        display: block;
+        padding:5px;
+        @include color-transition($header-menu-contacts-color,$header-menu-contacts-color-hover);
+    }
+}
+
+#header-menu-languages{
+    margin:30px 15px;
+    padding-bottom: 30px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        left: 30%;
+        height: 1px;
+        background: $header-menu-languages-separator;
+    }
+    .lang{
+        a{
+            @include color-transition($header-menu-languages-color,$header-menu-languages-color-hover);
+        }
+        display: inline-block;
+        &.active a{
+            color: $header-menu-languages-active-color;
+            font-weight: bold;
+        }
+        &:not(:last-child)::after{
+            content: '|';
+            color: $header-menu-languages-color;
+        }
+    }
+}
+
+
+
+
+@include media-breakpoint-up(md) {
+
+    #header-bar{
+        background: $header-bar-md-background;
+        @include transition(all 0.2s linear);
+        top: -150px;
+        left: 0;
+        right: 0;
+        z-index:20;
+        border:none;
+        &.fixed{
+            top: 0;
+            padding: 0;
+            position: fixed;
+            border-bottom: 1px solid $green;
+            @include transition(all 0.4s linear);
+
+        }
+    }
+
+
+    #header-navigation{
+        position: static;
+        background: none;
+        width: 100% !important;
+        overflow: visible !important;
+        &>.ps__rail-y{
+            display: none !important;
+        }
+    }
+
+    #search-input{
+        margin-top:0;
+    }
+
+    #header-user-actions{
+        color: $header-user-actions-md-color;
+
+    }
+
+
+
+
+}

@@ -1,0 +1,67 @@
+.customer-account-login{
+    .login-container{
+        @include make-row();
+    }
+    .block-customer-login{
+        @include inside();
+        @include make-col-ready();
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+
+    }
+    .block-new-customer{
+        @include inside();
+        @include make-col-ready();
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+    }
+}
+
+.customer-account-create{
+    .form-create-account{
+        @include make-row();
+    }
+    .fieldset{
+        br{
+            display: none;
+        }
+        @include inside();
+        @include make-col-ready();
+        &.info{
+            order: 1;
+            @include media-breakpoint-up(sm) {
+                @include make-col(6);
+            }
+        }
+        &.address{
+            order: 3;
+        }
+        &.account{
+            order: 2;
+            @include media-breakpoint-up(sm) {
+                @include make-col(6);
+            }
+        }
+    }
+    .actions-toolbar{
+        order: 4;
+        @include make-col-ready();
+    }
+}
+
+.customer-account-forgotpassword{
+    .form.password.forget{
+        @include make-row();
+    }
+    .fieldset{
+        @include make-col-ready();
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+    }
+    .actions-toolbar{
+        @include make-col-ready();
+    }
+}

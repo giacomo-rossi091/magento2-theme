@@ -1,0 +1,15 @@
+.fotorama__arr{
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+.fotorama__caption{
+    display: none !important;
+}
+
+.fotorama__thumb-border{
+    border: $fotorama-thumb-border-active !important;
+}
+
+.fotorama__thumb{
+    cursor: pointer;
+}

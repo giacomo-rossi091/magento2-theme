@@ -1,0 +1,237 @@
+#breadcrumb{
+    position: absolute;
+    top: 5px;
+    .breadcrumb-item{
+        display: inline-block;
+        color: $navigation-breadcrumb-item-color;
+        &:not(:last-child)::after{
+            content: '/';
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        &.active,&.active a{
+            color: $navigation-breadcrumb-item-color-active !important;
+        }
+        a{
+            @include color-transition($navigation-breadcrumb-item-color,$navigation-breadcrumb-item-color-hover);
+        }
+    }
+}
+
+.breadcrumbs{
+    position: absolute;
+    top: 5px;
+    .item{
+        display: inline-block;
+        color: $navigation-breadcrumb-item-color;
+        &:not(:last-child)::after{
+            content: '/';
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        &.active{
+            color: $navigation-breadcrumb-item-color-active !important;
+            a{
+                color: $navigation-breadcrumb-item-color-active !important;
+            }
+        }
+    }
+    strong{
+        color: $navigation-breadcrumb-item-color-active;
+        font-weight: normal;
+    }
+    a{
+        @include color-transition($navigation-breadcrumb-item-color,$navigation-breadcrumb-item-color-hover);
+    }
+}
+
+
+#header-menu{
+    text-transform: uppercase;
+    .menu-link{
+        padding:5px;
+        display: block;
+        margin-bottom: 10px;
+        @include color-transition($navigation-header-menu-item-color,$navigation-header-menu-item-color-hover);
+    }
+    .menu-lv-2{
+        margin-left: 30px;
+    }
+}
+
+#language-switcher{
+    .language{
+        display: inline-block;
+        text-align: center;
+        height: $input-group-input-height;
+        width: $input-group-input-height;
+        background: $navigation-language-switcher-language-background;
+        color: $navigation-language-switcher-language-color;
+        border:$navigation-language-switcher-language-border;
+        line-height: 45px;
+        a{
+            display: block;
+        }
+        &.active{
+            background: $navigation-language-switcher-language-background-active;
+            color: $navigation-language-switcher-language-color-active;
+        }
+    }
+}
+
+
+
+#footer-menu{
+
+
+}
+
+
+#notfound-menu{
+    margin:30px 0;
+    .menu-item{
+        @extend .button2;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: inline-block;;
+
+    }
+}
+
+
+/**
+*****************************************************************************************************************************************
+* Pager
+*/
+.pager{
+
+    .items{
+        padding-left: 0 !important;
+        margin-top:0 !important;
+    }
+    .item{
+        list-style: none !important;
+        background: $navigation-pager-item-background ;
+        a{
+            display: block;
+            color:$navigation-pager-item-color !important;
+        }
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+        border: 2px solid transparent;
+        @include transition(border-color 0.2s linear);
+        &.last,
+        &.first,
+        &.next,
+        &.previous{
+            background: none;
+        }
+
+        &.active{
+            border-color:transparent !important;;
+            background: $navigation-pager-item-background-active ;
+
+            color: $navigation-pager-item-color-active ;
+
+
+        }
+        &:hover{
+            border-color: $navigation-pager-item-border-color-hover ;
+            @include transition(border-color 0.2s linear);
+        }
+    }
+}
+
+/**
+*****************************************************************************************************************************************
+* Customer account
+*/
+.account-nav{
+    .item{
+        display: block;
+        padding:5px 0;
+        margin-bottom:5px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@include media-breakpoint-up(md) {
+
+    #language-switcher{
+        .language{
+            background: $navigation-language-switcher-md-language-background;
+            color: $navigation-language-switcher-md-language-color;
+            border:0;
+            border-bottom: 4px solid $navigation-language-switcher-md-border-color;
+            border-bottom-width: 0;
+            @include transition(border-bottom-width 0.1s linear);
+            a{
+                display: block;
+            }
+            &:hover,&:focus{
+                @include transition(border-bottom-width 0.1s linear);
+                border-bottom-width: 4px;
+            }
+            &.active{
+                background: $navigation-language-switcher-md-language-background-active;
+                color: $navigation-language-switcher-md-language-color-active;
+            }
+        }
+    }
+
+    #header-menu{
+        .menu-item-lv-1{
+            display: inline-block;
+            position: relative;
+            &:hover{
+                .menu-lv-2{
+                    visibility: visible;
+                    @include transition(margin-top 0.2s linear , opacity 0.2s linear, visibility 0.2s linear);
+                    margin-top:0;
+                    opacity: 1;
+                }
+            }
+        }
+        .menu-link{
+            @include color-transition($navigation-header-menu-md-item-color,$navigation-header-menu-md-item-color-hover);
+            margin:0;
+        }
+        .menu-link-lv-1{
+            display: inline-block;
+        }
+
+        .menu-link-lv-2{
+
+            padding: 10px;
+            margin: 10px 15px;
+        }
+        .menu-item-lv-1:hover > .menu-link-lv-1{
+            color:$navigation-header-menu-md-item-color-hover;
+        }
+
+        .menu-lv-2{
+            visibility: hidden;
+            box-shadow: $navigation-header-menu-md-sublevel-shadow;
+            width: auto;
+            min-width: 200px;
+            background: $navigation-header-menu-md-sublevel-background;
+            z-index: 20;
+            @include transition(margin-top 0.2s linear , opacity 0.2s linear, visibility 0.2s linear);
+            overflow: hidden;
+            position: absolute;
+            margin-top:50px;
+            margin-left:0;
+            opacity: 0;
+        }
+
+    }
+
+}

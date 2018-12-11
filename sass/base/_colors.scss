@@ -1,0 +1,255 @@
+/**
+*****************************************************************************************************************************************
+* Colors
+*/
+
+$red:         #c02c22;
+$light-black: #363636;
+$black:       #212121;
+$dark-black:  #131313;
+$yellow:      #ead055;
+$white:       #ffffff;
+
+$grey:        #ededed;
+$dark-grey: #BBBDBE;
+$green:       #7bc242;
+$blue:        #517bc5;
+
+/**
+*****************************************************************************************************************************************
+* Components
+*/
+$blocks-filter-color: $black;
+$blocks-filter-color-hover: $blue;
+$blocks-filter-heading-color: $green;
+$blocks-filter-separator: 1px solid $dark-grey;
+
+$buttons-button1-border:                                                        1px solid $blue;
+$buttons-button1-color:                                                         $white;
+$buttons-button1-background:                                                    $blue;
+$buttons-button1-color-hover:                                                   $blue;
+$buttons-button1-background-hover:                                              $white;
+
+$buttons-button2-border:                                                        1px solid $blue;
+$buttons-button2-color:                                                         $blue;
+$buttons-button2-background:                                                    $white;
+$buttons-button2-color-hover:                                                   $white;
+$buttons-button2-background-hover:                                              $blue;
+
+$buttons-button3-border:                                                        1px solid $white;
+$buttons-button3-color:                                                         $white;
+$buttons-button3-background:                                                    $blue;
+$buttons-button3-color-hover:                                                   $blue;
+$buttons-button3-background-hover:                                              $white;
+
+$buttons-button4-border: 2px solid $blue;
+$buttons-button4-color: $blue;
+$buttons-button4-color-hover: $green;
+$buttons-button4-border-hover: 2px solid $green;
+
+
+$input-group-input-background:                                                  $white;
+$input-group-input-color:                                                       $black;
+$input-group-input-border:                                                      1px solid $grey;
+$input-group-input-placeholder-color:                                           $black;
+$input-group-input-border-focus:                                                1px solid $blue;
+$input-group-legend-color:                                                      $black;
+$input-group-error-color:                                                       #FF8080;
+
+
+
+
+$navigation-breadcrumb-item-color:                                              $black;//
+$navigation-breadcrumb-item-color-hover:                                        $black;//
+$navigation-breadcrumb-item-color-active:                                       $blue;//
+
+$navigation-header-menu-background:                                             rgba(0,0,0,0.7);
+$navigation-header-menu-item-color:                                             $white;
+$navigation-header-menu-item-color-hover:                                       $blue;
+$navigation-header-menu-md-item-color:                                          $black;
+$navigation-header-menu-md-item-color-hover:                                    $blue;
+$navigation-header-menu-md-sublevel-background:                                 $white;
+$navigation-header-menu-md-sublevel-shadow:                                     0px 0px 10px 0px rgba(0,0,0,0.8);
+
+$navigation-language-switcher-language-background: $green;
+$navigation-language-switcher-language-color: $white;
+$navigation-language-switcher-language-border: 1px solid $white;
+$navigation-language-switcher-language-background-active: $white;
+$navigation-language-switcher-language-color-active: $green;
+$navigation-language-switcher-md-language-background: $dark-grey;
+$navigation-language-switcher-md-language-color: $white;
+$navigation-language-switcher-md-border-color: $blue;
+$navigation-language-switcher-md-language-background-active: $green;
+$navigation-language-switcher-md-language-color-active: $white;
+
+$navigation-pager-item-background: $grey;
+$navigation-pager-item-color: $black;
+$navigation-pager-item-background-active: $green;
+$navigation-pager-item-color-active: $white;
+$navigation-pager-item-border-color-hover: $blue;
+
+
+
+
+
+/**
+*****************************************************************************************************************************************
+* Layouts
+*/
+$comments-separator:                                                            2px solid $grey;
+
+$content-color:                                                                 $black;
+$content-heading-color:                                                         $green;
+$content-blockquote-background:                                                 $green;
+$content-blockquote-color:                                                      $white;
+$content-blockquote-cite-color:                                                 $white;
+$content-cite-color:                                                            $green;
+$content-link-color:                                                            $blue;
+$content-link-color-hover:                                                      $green;
+$content-figcaption-color:                                                      $black;
+$content-figcaption-background:                                                 rgba(255,255,255,0.7);
+$content-figcaption-color-hover:                                                 $red;
+$content-code-background:                                                       none;
+$content-code-color:                                                            $yellow;
+$content-pre-background:                                                        none;
+$content-pre-color:                                                             $yellow;
+$content-hr-background:                                                         $blue;
+$content-table-border-color:                                                    $dark-grey;
+
+
+
+$footer-banner-background:                                                      $grey;
+$footer-banner-color:                                                           $black;
+$footer-banner-color-hover:                                                     $green;
+$footer-social-background:                                                      $green;
+$footer-social-color:                                                           $white;
+$footer-social-color-hover:                                                     $blue;
+$footer-menu-background:                                                        $white;
+$footer-menu-title-color:                                                       $green;
+$footer-menu-color:                                                             $black;
+$footer-menu-color-hover:                                                       $blue;
+$footer-informations-background:                                                $grey;
+$footer-informations-color:                                                     $black;
+$footer-informations-color-hover:                                               $blue;
+$footer-signature-color:                                                        $black;
+$footer-signature-color-hover:                                                  $blue;
+$footer-signature-background:                                                   $white;
+$footer-back-to-top-background:                                                 $blue;
+$footer-back-to-top-color:                                                      $white;
+
+
+$header-bar-background:                                                         $white;
+$header-bar-md-background:                                                      $white;
+$header-bar-md-border-color-fixed:                                              $green;
+$header-navigation-background:                                                  $green;
+$header-toggle-open-border:                                                     1px solid $black;
+$header-toggle-open-color:                                                      $black;
+$header-toggle-open-background:                                                 $white;
+$header-toggle-close-border:                                                    1px solid $black;
+$header-toggle-close-color:                                                     $white;
+$header-toggle-close-background:                                                $black;
+$header-search-input-color:                                                     $black;
+$header-search-input-background:                                                $white;
+$header-search-input-border:                                                    1px solid $green;
+$header-search-submit-color:                                                    $green;
+$header-user-actions-color:                                                     $white;
+$header-user-actions-md-color:                                                  $green;
+
+$header-toggle-color:                                                           $white;
+$header-toggle-color-hover:                                                     $yellow;
+$header-contacts-separator:                                                     1px solid $white;
+$header-contacts-color:                                                         $white;
+$header-contacts-color-hover:                                                   $yellow;
+
+$header-menu-contacts-color:                                                    $white;
+$header-menu-contacts-color-hover:                                              $yellow;
+$header-menu-contacts-separator:                                                $white;
+$header-menu-languages-color:                                                   $white;
+$header-menu-languages-color-hover:                                             $yellow;
+$header-menu-languages-active-color:                                            $yellow;
+$header-menu-languages-separator:                                               $white;
+
+
+
+$main-subtitle-color:                                                           $yellow;
+$main-sharing-separator:                                                        2px solid $grey;
+$main-sidebar-additional-background: $grey;
+$main-sidebar-additional-separator-background: $dark-grey;
+
+$widgets-social-sharing-color: $white;
+
+$sidebar-banner-widget-background: $blue;
+$sidebar-banner-widget-title-color: $white;
+$sidebar-banner-color-widget-color: $white;
+$sidebar-banner-color-widget-color-hover: $green;
+
+
+$widgets-banner-widget-background: $blue;
+$widgets-banner-widget-title-color: $white;
+$widgets-banner-widget-color: $white;
+$widgets-banner-widget-color-hover: $green;
+
+$widgets-categories-slider-widget-background: $white;
+$widgets-categories-slider-widget-title-color: $green;
+$widgets-categories-slider-widget-dot-color: $white;
+$widgets-categories-slider-widget-dot-color-active: $blue;
+$widgets-categories-slider-widget-controls-color: $white;
+$widgets-categories-slider-widget-controls-color-hover: $blue;
+
+$widget-menu-column-separator-color: $grey;
+
+$widgets-banner-slider-widget-slideshow-dot-color: $white;
+$widgets-banner-slider-widget-slideshow-dot-color-active: $blue;
+$widgets-banner-slider-widget-slideshow-controls-color: $black;
+$widgets-banner-slider-widget-slideshow-controls-color-hover: $blue;
+$widgets-banner-slider-widget-slideshow-description-color: $white;
+$widgets-banner-slider-widget-slideshow-description-background: rgba(0,0,0,0.3);
+
+
+
+$product-item-name-color :                                                      $green;
+$product-separator:                                                             1px solid $grey;
+
+$product-related-item-name-color:                                               $green;
+$product-info-stock-available-color:                                            #28a745;
+$product-info-stock-unavailable-color:                                          #dc3545;
+
+
+//$message-error-background:
+//message-error-color
+/**
+*****************************************************************************************************************************************
+* Pages
+*/
+$home-top-background: $green;
+$home-top-color: $white;
+
+$login-remind-color: $blue;
+$login-remind-color-hover: $green;
+
+/**
+*****************************************************************************************************************************************
+* Themes
+*/
+$theme-color:                                                                   $black;
+$theme-headings-color:                                                          $green;
+
+/**
+*****************************************************************************************************************************************
+* Message
+*/
+$message-modals-wrapper-background: rgba(255,255,255,0.8);
+$message-modal-border: 2px solid $green;
+$message-modal-background: $white;
+
+
+/**
+*****************************************************************************************************************************************
+* Vendors
+*/
+$fotorama-thumb-border-active: 3px solid $blue;
+
+$cookie-notice-background:                                                      $yellow;
+$cookie-notice-color:                                                           $black;
+$cookie-notice-button-color:                                                    $yellow;
+$cookie-notice-button-background:                                               $black;

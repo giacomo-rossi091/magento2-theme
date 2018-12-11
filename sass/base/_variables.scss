@@ -1,0 +1,140 @@
+/**
+*****************************************************************************************************************************************
+* Variables
+*/
+$navigation-header-menu-item-icon-active:                                       $fa-var-caret-right;
+$navigation-footer-menu-item-separator:                                         $fa-var-circle;
+$theme-title-collapse-icon:                                                     $fa-var-chevron-up;
+$theme-title-collapse-collapsed-icon:                                           $fa-var-chevron-down;
+$halo3-slideshow-controls-prev-icon:                                            $fa-var-chevron-left;
+$halo3-slideshow-controls-next-icon:                                            $fa-var-chevron-right;
+$halo8-controls-icon-next:                                                      $fa-var-chevron-right;
+$halo8-controls-icon-prev:                                                      $fa-var-chevron-left;
+$content-blockquote-icon:                                                       "\"";
+$content-hr-height:                                                             1px;
+
+
+$input-group-input-height:                                                      45px;
+$input-group-textarea-height:                                                   150px;
+$input-group-input-border-radius:                                               0px;
+
+
+.banner-widget .banner-more a{
+    @extend .button3;
+}
+
+.categories-slider-widget .category-more a{
+    @extend .button1;
+}
+
+.block.related .tocart{
+    @extend .button2;
+}
+
+#back a{
+    @extend .button2;
+}
+
+
+
+.actions-toolbar {
+    .primary .action{
+        @extend .button1;
+    }
+    .secondary .action{
+        @extend .button2;
+    }
+}
+
+.product-item-actions{
+    .actions-primary .action{
+        @extend .button1;
+    }
+    .actions-secondary .action{
+        @extend .button2;
+    }
+}
+
+.box-actions{
+    .action.edit{
+        @extend .button1;
+    }
+    .action.change-password{
+        @extend .button2;
+    }
+}
+
+.modal-popup{
+    .action-secondary,
+    .action.secondary{
+        @extend .button2;
+    }
+    .action-primary,
+    .action.primary{
+        @extend .button1;
+    }
+    .action-close{
+        @extend .button2;
+    }
+}
+
+.block-minicart{
+    .actions-primary .action{
+        @extend .button1;
+    }
+    .actions-secondary .action{
+        @extend .button2;
+    }
+}
+
+.cart.main.actions{
+    .continue{
+        @extend .button2;
+    }
+    button.clear{
+        @extend .button2;
+    }
+    button.update{
+        @extend .button2;
+    }
+}
+
+.block-addresses-list{
+    .action.edit,
+    .action.delete{
+        @extend .button4;
+    }
+}
+
+.block-minicart .product.actions{
+    .action.delete{
+        @extend .button4;
+    }
+}
+
+.block-dashboard-orders .action.view-all{
+    @extend .button1;
+}
+
+.form-cart .action-delete{
+    @extend .button4;
+}
+
+.checkout-methods-items{
+    .checkout,
+    .multicheckout{
+        @extend .button1;
+    }
+}
+
+.action-select-shipping-item{
+    @extend .button1;
+}
+
+.action-show-popup{
+    @extend .button1;
+}
+
+.opc-block-shipping-information .action-edit{
+    @extend .button1;
+}

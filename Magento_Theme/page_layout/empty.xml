@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <container name="root">
+        <container name="after.body.start" before="-" label="After Body Start"/>
+        <container name="page.wrapper" htmlTag="div" htmlId="page-wrapper">
+            <container name="global.notices" htmlTag="div" htmlId="global-notices" before="-"/>
+            <container name="page.messages" htmlTag="div" htmlId="page-messages">
+                <block class="Magento\Framework\View\Element\Template" name="ajax.message.placeholder" template="Magento_Theme::html/messages.phtml"/>
+                <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="Magento_Theme::messages.phtml"/>
+            </container>
+            <container name="header" htmlTag="header" htmlId="header" >
+                <container name="header.container" htmlTag="div" htmlClass="container">
+                    <container name="header.content"/>
+                </container>
+            </container>
+            <container name="main" htmlTag="main" htmlId="main" >
+                <container name="main.container" htmlTag="div" htmlClass="container">
+                    <container name="main.contentt"/>
+                </container>
+            </container>
+            <container name="footer" htmlTag="footer" htmlId="footer" >
+                <container name="footer.container" htmlTag="div" htmlClass="container">
+                    <container name="footer.content" />
+                </container>
+            </container>
+        </container>
+        <container name="before.body.end"  after="-" label="Before Body End"/>
+    </container>
+</layout>

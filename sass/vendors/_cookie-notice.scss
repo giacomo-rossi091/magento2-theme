@@ -1,0 +1,23 @@
+#cookie-notice{
+
+    font-size: 15px;
+
+    .cookie-notice-container{
+        background: $cookie-notice-background !important;
+        color: $cookie-notice-color !important;
+    }
+
+    .button{
+        color: $cookie-notice-button-color !important;
+        background: $cookie-notice-button-background !important;
+        background-image: none !important;
+        background-repeat: none !important;
+        display: inline-block;
+    }
+
+    #cn-notice-text{
+        display: block;
+        margin-bottom:10px;
+    }
+
+}

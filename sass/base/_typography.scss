@@ -1,0 +1,460 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
+
+$text-font:    'Work Sans';
+$special-font: 'Work Sans';
+$icon-font:    'Font Awesome 5 Free';
+
+@mixin heading-spacing{
+    margin-top: vr(1);
+}
+
+@mixin content-spacing{
+    margin-top: vr(0.5);
+}
+
+
+/* TYPI CONFIG */
+$breakpoints: (
+    sm:   768px,
+    md:   992px,
+    lg:   1200px
+);
+
+$typi: (
+    base:    (null: (18px, 1.6), sm: (19px, 1.6), md: (20px, 1.6)),
+    h1:      (null: (32px, 1.2)),
+    h2:      (null: (26px, 1.2)),
+    h3:      (null: (23px, 1.2)),
+    h4:      (null: (20px, 1.2)),
+    h5:      (null: (19px, 1.2)),
+    h6:      (null: (18px, 1.2)),
+    text-xxs:(null: (12px, 1.4)),
+    text-xs: (null: (14px, 1.4)),
+    text-lg: (null: (15px, 1.4)),
+    text-xl: (null: (16px, 1.4)),
+);
+
+
+html{
+    font-weight: 300;
+}
+
+body{
+    font-family: $text-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+    font-family: $text-font;
+}
+
+b,
+strong{
+    font-weight: 600;
+}
+
+label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+legend{
+    font-weight: 400;
+    @include typi('h4');
+}
+
+i,
+em,
+cite,
+figcaption{
+    font-style: italic;
+}
+
+h1 {
+  @include typi('h1');
+  //@include heading-spacing();
+}
+
+h2 {
+  @include typi('h2');
+}
+
+h3 {
+  @include typi('h3');
+}
+
+h4 {
+  @include typi('h4');
+}
+
+h5 {
+  @include typi('h5');
+}
+
+h6 {
+  @include typi('h6');
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+textarea{
+    font-size: inherit;
+    font-family: $text-font;
+}
+
+input[type="submit"],
+button{
+    font-family: $special-font;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+table{
+    @include typi('text-xs');
+    thead{
+        font-family: $special-font;
+        th{
+            font-weight: 400;
+        }
+    }
+    tbody{
+        font-family: $text-font;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#block-customer-login-heading,
+#block-new-customer-heading{
+    font-weight: 400;
+    @include typi('h4');
+}
+
+
+
+
+
+
+#content{
+    h2,h3,h4,h5,h6{
+        @include heading-spacing();
+    }
+}
+
+
+
+#sidebar-additional{
+    @include typi('text-xs');
+}
+
+.block{
+    &.filter{
+        dt,
+        .filter-current-subtitle{
+            @include typi('h5');
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+    &.block-minicart{
+        @include typi('text-xs');
+    }
+    &.block-dashboard-orders{
+        @include typi('text-xs');
+    }
+}
+
+.button1{
+    font-family: $text-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include typi('text-xxs');
+
+}
+
+.button2{
+    font-family: $text-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include typi('text-xxs');
+}
+
+.button3{
+    font-family: $text-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include typi('text-xxs');
+}
+
+.product-item{
+    .product-item-name{
+        font-weight: 400;
+        text-transform: uppercase;
+        @include typi('text-xl');
+    }
+    .product.options.list,
+    .product.options{
+        font-weight: 400;
+    }
+}
+
+.modal-popup{
+    @include typi('text-xs');
+}
+
+.sales-order-history .orders-history{
+    @include typi('text-xs');
+}
+
+.sales-order-view .table-order-items{
+    @include typi('text-xs');
+}
+
+.checkout-cart-index #shopping-cart-table{
+    @include typi('text-xs');
+}
+
+.dropdown-toggle{
+    text-transform: none !important;
+}
+
+
+.table-caption{
+    display: none;
+}
+
+
+
+
+#password-strength-meter-container{
+    font-size: 12px;
+}
+
+div.mage-error{
+    font-size: 12px;
+}
+
+#breadcrumb,
+.breadcrumbs{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#header-user-actions{
+    //@include typi('text-xs');
+}
+
+#header-languages{
+    @include typi('text-xs');
+    text-transform: uppercase;
+}
+
+#header-menu{
+    text-transform: uppercase;
+    //@include typi('text-xs');
+}
+
+#footer-menu{
+    @include typi('text-xs');
+}
+
+#footer-informations{
+    @include typi('text-xxs');
+}
+
+#footer-signature{
+    @include typi('text-xxs');
+    a{
+        font-weight: 600;
+    }
+}
+
+
+
+.layout2{
+    .post-title{
+        @include typi('text-lg');
+        font-family: $special-font;
+    }
+}
+
+
+.layout1{
+    .post-title{
+        @include typi('text-xs');
+        text-transform: uppercase;
+        font-family: $text-font;
+    }
+}
+
+.halo3 .more{
+    font-family: $special-font;
+}
+
+
+#pagination{
+    font-family: $special-font;
+    @include typi('text-xxs');
+}
+
+
+
+
+.banner-widget{
+    .banner-title h2{
+        font-weight: 600;
+    }
+}
+
+.categories-slider-widget{
+    .category-title h4{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+.footer-menu-column-widget{
+    .footer-menu-column-title h4{
+        font-weight: 400;
+    }
+}
+
+.banner-slider-widget{
+    .description{
+        font-weight: 600;
+        @include typi('text-lg');
+    }
+}
+
+.term-button{
+    font-size: 8px;
+    font-weight: bold;
+    font-family: $special-font;
+    text-transform: uppercase;
+}
+
+#title{
+    font-family: $text-font;
+}
+
+#subtitle{
+    font-family: $special-font;
+    @include typi('text-xs');
+}
+
+#date{
+    @include typi('text-xxs');
+}
+
+#author{
+    font-weight: 600;
+    @include typi('text-xxs');
+}
+
+#post-sidebar{
+    line-height: 0.7em;
+    @include typi('text-xs');
+}
+
+blockquote,code,pre{
+    font-family: $special-font;
+}
+
+figcaption,cite{
+    @include typi('text-xs');
+}
+
+.contact-us-form h4{
+    font-family: $special-font;
+}
+
+.price-box{
+    font-weight: 400;
+}
+
+.catalog-product-view{
+
+    #product{
+        .price-box{
+            @include typi('h3');
+        }
+        .box-tocart{
+            .label{
+                font-weight: 400;
+            }
+        }
+        .sku{
+            @include typi('text-xs');
+            .type{
+                font-weight: 400;
+            }
+            .value{
+                font-weight: 600;
+            }
+        }
+        .description{
+            .type{
+                font-weight: 400;
+                text-transform: uppercase;
+                @include typi('h4');
+            }
+            .value{
+
+            }
+        }
+        .stock{
+            @include typi('text-xs');
+        }
+    }
+
+    #related{
+        .price-box{
+            font-weight: 400;
+        }
+        .product-item-name{
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+
+#customer-login-block.remind{
+    @include typi('text-xxs');
+}
+
+@include media-breakpoint-up(md){
+
+    #header-menu{
+        .menu-item-lv-2{
+            @include typi('text-xs');
+        }
+    }
+
+}
+
+
+
+
+/* TYPE INIT */
+
+@include typi-init;
+@include typi-create-classes;

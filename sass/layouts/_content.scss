@@ -1,0 +1,198 @@
+legend,
+.block-title{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+
+/*.table th, .table td{
+    border-color: $content-table-border-color;
+
+}
+
+.table thead th{
+    border-color: $content-table-border-color;
+}
+
+.table tbody + tbody{
+    border-color: $content-table-border-color;
+}
+
+#content{
+
+    color: $content-color;
+
+    h1,h2,h3,h4,h5,h6{
+        color: $content-heading-color;
+        @include heading-spacing;
+    }
+
+    p{
+        @include content-spacing;
+    }
+
+    form{
+        @include content-spacing;
+    }
+
+    embed{
+        @include content-spacing;
+    }
+
+    iframe{
+        @include content-spacing;
+    }
+
+
+    img{
+        @include content-spacing;
+    }
+
+    br{
+        display: block;
+        //content: ' ';
+        //@include content-spacing;
+    }
+
+
+    ul,
+    ol{
+        @include content-spacing;
+        list-style-position: inside;
+        padding-left:20px;
+    }
+
+    ul li{
+        list-style: disc;
+    }
+
+    ol li{
+        list-style:decimal;
+    }
+
+    blockquote,
+    q {
+        @include content-spacing;
+        padding:15px 60px !important;
+        background: $content-blockquote-background;
+        color: $content-blockquote-color;
+        position: relative;
+        p{
+            &:first-child:before{
+                content: $content-blockquote-icon;
+                position: absolute;
+                left: 10px;
+                font-size: 50px;
+            }
+        }
+        cite{
+            color: $content-blockquote-cite-color;
+        }
+    }
+
+    cite{
+        @include content-spacing;
+        color: $content-cite-color;
+        &:before{
+            content: '- ';
+        }
+        &:after{
+            content: ' -';
+        }
+    }
+
+    a{
+        @include color-transition($content-link-color,$content-link-color-hover);
+    }
+
+    figure{
+        @include content-spacing;
+        position: relative;
+        figcaption{
+            padding:5px;
+            text-align: center;
+            color:$content-figcaption-color;
+            background: $content-figcaption-background;
+            position: absolute;
+            bottom:10px;
+            left: 10px;
+            right: 10px;
+            a{
+                @include color-transition($content-figcaption-color,$content-figcaption-color-hover);
+            }
+        }
+        img{
+            margin:0;
+        }
+    }
+
+    code{
+        @include content-spacing;
+        background: $content-code-background;
+        color: $content-code-color;
+    }
+
+    pre{
+        @include content-spacing;
+        padding:15px !important;
+        background: $content-pre-background;
+        color: $content-pre-color;
+
+    }
+
+    hr{
+        margin:50px 0;
+        background: $content-hr-background;
+        height:$content-hr-height;
+    }
+
+    table{
+        text-align: center;
+        //border: $content-table-border;
+        @include content-spacing;
+        /*thead{
+            background: $content-table-head-background;
+            color:$content-table-head-color;
+            th{
+                padding:7px;
+                border:none;
+                &:not(:last-child){
+                    border-right: $content-table-head-separator;;
+                }
+            }
+        }
+
+        tbody{
+            color: $content-table-body-color;
+            th{
+                padding:7px;
+            }
+            td{
+                padding:7px;
+            }
+            tr:not(:last-child){
+                border-bottom: $content-table-body-separator;
+            }
+            tr > *:not(:last-child){
+                border-right: $content-table-body-separator;
+            }
+        }
+    }
+
+    .embed {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        iframe{
+            margin: 0 !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+*/

@@ -1,0 +1,126 @@
+.block{
+
+    &.filter{
+        color: $blocks-filter-color;
+        a{
+            @include color-transition($blocks-filter-color,$blocks-filter-color-hover);
+        }
+        dt,
+        .filter-current-subtitle{
+            display: block;
+            color: $blocks-filter-heading-color;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: $blocks-filter-separator;
+            &:not(:first-child){
+                margin-top:25px;
+            }
+        }
+        .item{
+            margin-bottom:10px;
+        }
+        .count{
+            display: none;
+        }
+
+        .filter-current{
+            .remove{
+                font-size: small;
+            }
+        }
+
+        .filter-actions{
+            margin-bottom:25px;
+        }
+
+        .filter-clear{
+            display: block;
+            margin-top: 15px;
+        }
+    }
+
+    &.block-minicart{
+        width: 300px;
+        overflow: hidden;
+        opacity: 0;
+        @include transition(opacity 0.2s linear);
+        z-index: 10;
+        outline: none;
+        position: fixed;
+        top:140px;
+        left: 60px;
+        color: $black;
+        background: $white;
+        padding: 15px;
+        border: 1px solid $grey;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+        .minicart-items-wrapper{
+            max-height: 300px !important;
+            overflow-y: scroll;
+            position: relative;
+        }
+        .product.actions{
+            margin-top: 5px;
+        }
+        .items-total{
+            margin-top:10px;
+            padding-top: 10px;
+            border-top: 1px solid $grey;
+        }
+        .item-qty{
+            width: 50%;
+        }
+        .subtotal{
+            margin-top:10px;
+            padding-top: 10px;
+            border-top: 1px solid $grey;
+        }
+
+        .block-title{
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .block-content{
+            text-align: left;
+        }
+
+    }
+
+
+    &.shipping{
+        margin-top: 15px;
+        border-top:1px solid $dark-grey;
+        .title{
+            outline:none;
+            cursor: pointer;
+        }
+        #block-shipping-heading{
+            color: $black;
+            margin-top: 0 !important;
+            margin-right: 20px;
+            display: inline-block;
+        }
+        &.active i{
+            @include transform(rotate(180deg));
+        }
+        .field.note{
+            margin-bottom:15px;
+        }
+
+
+    }
+
+}
+
+
+@include media-breakpoint-up(md) {
+    .block{
+        &.block-minicart{
+            position: absolute;
+            right: 0;
+            left: auto;
+            top:40px;
+        }
+    }
+}

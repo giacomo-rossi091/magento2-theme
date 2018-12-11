@@ -1,0 +1,75 @@
+@mixin chrome-fix()
+{
+    -webkit-transform: translateZ(0);
+}
+
+@mixin inside($padding: 15px)
+{
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin break-container()
+{
+    left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	//max-width: 1920px;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
+
+@mixin color-transition($color,$color-hover){
+    @include transition(color 0.2s linear);
+    color: $color;
+    &:hover,
+    &:active,
+    &:focus{
+        color: $color-hover;
+        @include transition(color 0.2s linear);
+    }
+}
+
+@mixin background-transition($background,$background-hover){
+    @include transition(background 0.2s linear);
+    background: $background;
+    &:hover,
+    &:active,
+    &:focus{
+        color: $background-hover;
+        @include transition(background 0.2s linear);
+    }
+}
+
+
+
+@mixin color-background-t($color,$color-hover,$background,$background-hover){
+    @include transition(color 0.2s linear,background 0.2s linear);
+    color: $color;
+    background: $background;
+    &:hover,
+    &:active,
+    &:focus{
+        color: $color-hover;
+        background: $background-hover;
+        @include transition(color 0.2s linear,background 0.2s linear);
+    }
+}
+
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+      color: $color;
+  }
+  &:-moz-placeholder {
+      color: $color;
+  }
+  &::-moz-placeholder {
+      color: $color;
+  }
+  &:-ms-input-placeholder {
+      color: $color;
+  }
+}

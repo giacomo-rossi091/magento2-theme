@@ -1,0 +1,122 @@
+.checkout-index-index{
+
+    #checkout-loader{
+        position: fixed;
+        height: 64px;
+        width: 64px;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50% , -50%));
+    }
+
+    .action-auth-toggle,
+    .action-close{
+        display: none;
+    }
+
+    .opc-sidebar{
+        outline: none;
+         .action-close{
+            display: none;
+        }
+    }
+
+    .opc-block-summary{
+        .product-item{
+            list-style: none !important;;
+            img{
+                margin-top: 0 !important;
+            }
+            .product-item-name{
+                margin-top:15px !important;
+            }
+            .product-image-wrapper{
+                font-size: 0;
+                display: block;
+            }
+        }
+    }
+
+
+    .minicart-items{
+        padding-left: 0 !important;
+        list-style: none;
+    }
+
+
+
+    .opc-progress-bar{
+        padding-left: 0 !important;
+        margin:20px 0;
+        .opc-progress-bar-item{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            padding: 5px;
+            border-radius: 0 !important;
+            margin-right: 5px;
+            margin-bottom:5px;
+            background: $grey;
+            &._active{
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+
+    #checkoutSteps{
+        padding-left: 0 !important;
+        li{
+            list-style: none;
+        }
+    }
+
+    #block-discount-heading{
+        margin-bottom:15px;
+        padding-bottom:15px;
+        border-bottom: 1px solid;
+    }
+
+    .opc-block-shipping-information
+    {
+         h2{
+            margin-bottom:15px;
+            padding-bottom:15px;
+            border-bottom: 1px solid;
+        }
+        .action.action-edit{
+            margin-bottom: 15px;
+        }
+    }
+
+
+    .step-title,
+    .title{
+        margin-bottom:15px;
+        padding-bottom:15px;
+        border-bottom: 1px solid;
+    }
+
+
+    .shipping-address-item{
+        padding:15px;
+        border:2px solid $grey;
+        border-radius: 10px;
+        &.selected-item{
+            border:2px solid $green;
+        }
+    }
+
+    .action-select-shipping-item{
+        margin-top: 15px;
+    }
+
+    .actions-toolbar .primary .action.continue{
+        margin:30px 0 !important;
+    }
+
+    .action-show-popup{
+        margin:30px 0 !important;
+    }
+
+}

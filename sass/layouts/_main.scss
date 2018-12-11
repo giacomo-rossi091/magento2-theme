@@ -1,0 +1,28 @@
+#main{
+    padding:40px 0;
+    position: relative;
+
+
+    #sidebar-additional{
+        padding:15px;
+        background: $main-sidebar-additional-background;
+
+        .delimiter{
+            height: 1px;
+            background: $main-sidebar-additional-separator-background;
+            display: block;
+        }
+    }
+
+
+
+
+}
+
+
+
+@include media-breakpoint-up(sm){
+
+
+
+}
