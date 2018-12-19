@@ -18,12 +18,12 @@ function($, selectpicker, slick, PerfectScrollbar,resolver) {
        });
    }
 
-   resolver(initScollbar.bind());
-   new PerfectScrollbar('.perfect-scrollbar');
+   //resolver(initScollbar.bind());
+   //new PerfectScrollbar('.perfect-scrollbar');
    //new PerfectScrollbar('.modal-inner-wrap');
 
 
-  $('select').not('.super-attribute-select').selectpicker('maxOptions', 2);
+  //$('select').not('.super-attribute-select').selectpicker('maxOptions', 2);
 
   $(".categories-slider .categories").slick({
       accessibility: true,

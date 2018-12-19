@@ -6,5 +6,7 @@
  */
 -->
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
-    <update handle="1column"/>
+    <update handle="2column"/>
+    <referenceContainer name="main.column"  htmlClass="col-12 col-sm-8 col-md-9 order-sm-1"/>
+    <referenceContainer name="sidebar.column" htmlClass="col-12 col-sm-4 col-md-3 order-sm-2"/>
 </layout>

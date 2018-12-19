@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="main.container">
+        <container name="columns.top" label="Columns Top" htmlTag="div" htmlId="columns-top" />
+        <container name="columns" htmlTag="div" htmlId="columns">
+            <container name="columns.row" htmlTag="div" htmlClass="row">
+                <container name="main.column" label="Main Column" htmlTag="div" htmlId="main-column" htmlClass="col-12"/>
+            </container>
+        </container>
+        <container name="columns.botton" label="Columns Bottom" htmlTag="div" htmlId="columns-bottom" />
+    </referenceContainer>
+</layout>

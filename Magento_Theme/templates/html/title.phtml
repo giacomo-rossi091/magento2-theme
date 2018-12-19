@@ -1,5 +1,14 @@
 <?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 
+// @codingStandardsIgnoreFile
+
+/**
+ * @var $block \Magento\Theme\Block\Html\Title
+ */
 $cssClass = $block->getCssClass() ? ' ' . $block->getCssClass() : '';
 $title = $block->escapeHtml($block->getPageHeading());
 
